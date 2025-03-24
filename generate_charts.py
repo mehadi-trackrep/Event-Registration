@@ -9,7 +9,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 # Authenticate and access the Google Sheets data
 def authenticate_and_get_sheet():
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name('credentials_bak.json', scope)
     client = gspread.authorize(creds)
 
     # Replace this with your actual Google Sheets link
